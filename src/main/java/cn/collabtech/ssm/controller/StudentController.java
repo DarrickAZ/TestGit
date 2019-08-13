@@ -14,13 +14,15 @@ import java.util.List;
  * @Description:
  */
 
-@Api("StudentController相关API")
+@Api("StudentController相关API-8-13")
 @RestController
 @RequestMapping("/api")
 public class StudentController {
 
     @Autowired
     private StudentService studentService;
+
+    int i =1;
 
     @ApiOperation(value = "查询所有学生信息",notes = "查询数据库中所有学生信息")
     @GetMapping("/student")
